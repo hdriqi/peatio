@@ -12,6 +12,10 @@ This daemon transfer fees for deposit collection paying and send deposit_collect
 
 This daemon creates new addresses for you.
 
+## amqp:influx_writer
+
+This daemon reads from peatio.trade exchange and records trades to InfluxDB.
+
 ## amqp:market_ticker
 
 This daemon updates market ticker when some orders or trades are created / updated.
@@ -51,10 +55,6 @@ This daemon monitors blockchain for incoming deposits and withdrawal and updates
 ## daemon:global_state
 
 This daemon send orderbook to Ranger every 5 seconds.
-
-## daemon:k
-
-This daemon updates k-lines every 15 seconds.
 
 ## daemon:withdraw_audit
 
